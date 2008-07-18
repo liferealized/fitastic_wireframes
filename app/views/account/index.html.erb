@@ -1,0 +1,111 @@
+<div id="main-column" class="column span-16 colborder">
+  <h2>Your Account</h2>
+  <div class="account-details">
+    <p><label>Your URL:</label> http://owner.fitastic.net (<%= link_to 'Change this Url', {:controller => 'account', :action => 'subdomain'} %>)</p>
+    <p><label>Member Since:</label> January 15, 2008</p>
+    <p><label>Card Information:</label> **** **** **** 7890 expires 10/10 (<%= link_to 'Change this Credit Card', {:controller => 'account', :action => 'subdomain'} %>)
+    <p><label><input type="checkbox" /> Yes, I would like to receive you newsletter.</label></p>
+  </div>
+  
+  <p>Instructions about the plans.</p>
+  
+  <table>
+    <tbody>
+      <tr>
+        <th></th>
+        <th><%= link_to 'Downgrade', {:controller => 'account', :action => 'downgrade', :id => 'free'} %></th>
+        <th><%= link_to 'Downgrade', {:controller => 'account', :action => 'downgrade', :id => '12'} %></th>
+        <th><%= link_to 'Downgrade', {:controller => 'account', :action => 'downgrade', :id => '24'} %></th>
+        <th class="current">Your Current Plan</th>
+        <th><%= link_to 'Upgrade', {:controller => 'account', :action => 'upgrade', :id => '72'} %></th>
+        <th><%= link_to 'Upgrade', {:controller => 'account', :action => 'upgrade', :id => '108'} %></th>
+        <th><%= link_to 'Upgrade', {:controller => 'account', :action => 'upgrade', :id => '139'} %></th>
+      </tr>
+      <tr>
+        <th>Monthly Fee</td>
+        <td>Free</td>
+        <td>$12</td>
+        <td>$24</td>
+        <td class="current">$36</td>
+        <td>$72</td>
+        <td>$108</td>
+        <td>$139</td>
+      </tr>
+      <tr>
+        <th>Trainers</th>
+        <td>1</td>
+        <td>1</td>
+        <td>3</td>
+        <td class="current">6</td>
+        <td>9</td>
+        <td>18</td>
+        <td>36</td>
+      </tr>
+      <tr>
+        <th>Storage</th>
+        <td>------</td>
+        <td>1GB</td>
+        <td>2GB</td>
+        <td class="current">4GB</td>
+        <td>8GB</td>
+        <td>16GB</td>
+        <td>24GB</td>
+      </tr>
+      <tr>
+        <th>SSL</th>
+        <td>------</td>
+        <td>------</td>
+        <td>Included</td>
+        <td class="current">Included</td>
+        <td>Included</td>
+        <td>Included</td>
+        <td>Included</td>
+      </tr>
+      <tr>
+        <th>Company Website</th>
+        <td>------</td>
+        <td>------</td>
+        <td>------</td>
+        <td class="current">Included</td>
+        <td>Included</td>
+        <td>Included</td>
+        <td>Included</td>
+      </tr>
+      <tr>
+        <th>Active Clients</th>
+        <td>2</td>
+        <td>10</td>
+        <td>25</td>
+        <td class="current">50</td>
+        <td>75</td>
+        <td>150</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <th>Email Tech Support</th>
+        <td>Included</td>
+        <td>Included</td>
+        <td>Included</td>
+        <td class="current">Included</td>
+        <td>Included</td>
+        <td>Included</td>
+        <td>Included</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>Need to Cancel?</h3>
+  <p>By <a href="#">clicking here</a> you are permanently deleting your account.</p>
+
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <h3>Question 1</h3>
+  <p>This is the answer to question 1. This is placeholder text to show what it would look 
+    like if there was an actual answer to a question.</p>
+  <h3>Question 2</h3>
+  <p>This is the answer to question 2. This is placeholder text to show what it would look 
+    like if there was an actual answer to a question.</p>
+  <h3>Question 3</h3>
+  <p>This is the answer to question 3. This is placeholder text to show what it would look 
+     like if there was an actual answer to a question.</p>
+</div>

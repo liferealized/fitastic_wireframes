@@ -1,0 +1,24 @@
+<div id="main-column" class="column span-16 colborder">
+  <div id="client-header">
+    <%= link_to "Calendar View", { :controller => 'clients', :action => 'activity', :id => @id, :view => 'calendar' }, :class => "right" %>
+    <%= link_to '', { }, :class => "client-picture" %>
+    <h2 class="nil-bottom-margin"><%= @id %>'s Activity</h2>
+    <p><%= @id %> has been a client since 15 November, 2007.</p>
+  </div>
+  <h3>Today</h3>
+  <ul>
+    <li><span class="updated">Updated</span> his 
+      <a href="/clients/jimmy-james/progress/2008-06-27">measurements and weight</a> at 12:16pm. 
+      He's <a href="/clients/james-gibson/progress">lost 10 pounds</a> since creating his account!</a></li>
+  </ul>
+  <h3>Yesterday</h3>
+  <ul>
+    <li>James <span class="ate">ate</span> 2000 calories for the day.</li>
+  </ul>
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <h3><%= @id %>'s calorie intake for the week</h3>
+  <img class="image" src="http://chart.apis.google.com/chart?cht=bvg&chco=4d89f9,c6d9fd&chbh=14&chd=t:2000,2000,2000,2000,2000,2000,2000|1870,1920,2120,1600,1840,1700,2700&chs=300x144&chr=0|500|1000|1500|2000|2500&chl=Su|Mo|Tu|We|Th|Fr|Sa" alt="" />
+  <h3>More Charts below... TBD</h3>
+</div>

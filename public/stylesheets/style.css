@@ -1,0 +1,651 @@
+body {
+	margin:0;
+	padding:1.5em;
+}
+
+.container {
+	width:100%;
+}
+
+.right {
+	float:right;
+}
+
+img {
+	margin:0 1.5em 1.5em 0;
+}
+
+img.right {
+	margin:0 0 1.5em 1.5em;
+}
+
+.nil-bottom-margin {
+	margin-bottom:0;
+}
+
+hr {
+	background:#222;
+}
+
+#main-column {
+	margin-bottom:1.5em;
+	min-width:630px;
+}
+
+#secondary-column {
+	float:right;
+	min-width:270px;
+}
+
+
+/*
+*	Main / Secondary Top Navigation
+************************************/
+#main-nav {
+	list-style:none;
+	margin-left:0;
+}
+
+#secondary-nav {
+	float:right;
+	list-style:none;
+	margin:0;
+}
+
+#main-nav li {
+	list-style:none;
+	float:left;
+	margin-right:2px;
+}
+
+#secondary-nav li {
+	list-style:none;
+	float:left;
+	margin-left:2px;
+}
+
+#main-nav li a, 
+#secondary-nav li a {
+	display:block;
+	padding:0 1em;
+	background:#222;
+	color:#f1f1f1;
+	text-decoration:none;
+}
+
+#main-nav li a:hover, 
+#secondary-nav li a:hover {
+	background:#f1f1f1;
+	color:#222;
+}
+
+#main-nav li a.active,
+#secondary-nav li a.active {
+	background:green;
+	color:#f1f1f1;
+}
+
+/*
+*	Latest Activity
+************************************/
+
+
+/*
+*	Form Fields
+************************************/
+input.side {
+	width:95%;
+}
+
+button.in-line-with-text {
+	margin-bottom:1.5em;
+}
+
+/*
+* List - Client / Workout / Food / Trainer
+************************************/
+#list {
+	margin-bottom:1.5em;
+}
+
+.list-container {
+		width:100%;
+		margin-bottom:1.5em;
+		border-bottom:1px solid #eee;
+	}
+	
+	.list-container .list-picture {
+		float:left;
+		width:14%;
+	}
+	
+	.list-container .list-picture a {
+		display:block;
+		width:60px;
+		height:52px;
+		background:#f1f1f1;
+		margin:0 1.5em 0 0;
+		border:1px solid #ccc;
+	}
+
+	.list-container .list-details {
+		float:left;
+		margin:0 0 1.5em 0;
+		height:55px;
+		width:32%;
+	}
+	
+		.list-details .list-name {
+			margin-bottom:1em;
+		}
+	
+	.list-container .list-contact-info,
+	.list-container .list-address,
+	.list-container .list-actions {
+		float:left;
+		margin:1.5em 0 0 0;
+		width:18%;
+	}
+
+/*
+* Form
+************************************/
+.form {
+	
+}
+
+	.form fieldset {
+		background:#f9f9f9;
+		clear:both;
+	}
+	
+	.form legend {
+		padding:.5em 1em;
+		border:1px solid #ccc;
+		background:#fff;
+	}
+	
+	.form label {
+		margin:.75em 2% 0;
+		float:left;
+		display:block;
+		width:15%;
+		line-height:1.5em;
+		text-align:right;
+	}
+	
+	.form label.title {
+		margin:1.35em 2% 0;
+	}
+	
+	.form input.text {
+		float:left;
+		width:78%;
+	}
+	
+	.form input.city {
+		width:34%;
+		margin-right:3%;
+	}
+	
+	.form input.state {
+		width:9%;
+		margin-right:3%;
+	}
+	
+	.form input.zip_code {
+		width:25%;
+	}
+	
+	.form select.select {
+		font-size:1.25em;
+	}
+	
+	.form select.select option {
+		padding:0 6px;
+	}
+	
+	.form textarea.textarea {
+		width:96%;
+	  font-size:100%;
+	  color: #222; 
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	.form .details label,
+	.form .instructions label {
+		width:14%;
+	}
+
+	.form .instructions .text {
+		width:75%;
+	}
+	
+	.form .details .text {
+		width:10%;
+		margin-right:2%;
+	}
+	
+	.form p.add-another {
+		margin:0;
+		clear:both;
+	}
+	
+	.form fieldset.email input.text,
+	.form fieldset.phone input.text {
+		width:70%;
+	}
+	
+	.form label.descriptor {
+		margin:0 0 0 2%;
+		width:24%;
+		text-align:left;
+	}
+	
+/*
+* Detail Structure
+************************************/	
+#client-header {
+	border-bottom:1px solid #ccc;
+	margin-bottom:1.5em;
+}
+#client-header .client-picture {
+	display:block;
+	float:left;
+	margin:0 1.5em 1.5em 0;
+	width:60px;
+	height:52px;
+	border:1px solid #ccc;
+	background:#f1f1f1;
+}
+
+#eating-plan {
+	border-bottom:1px solid #eee;
+	margin-bottom:1.5em;
+}
+
+#workout-plan {
+	border-bottom:1px solid #eee;
+	margin-bottom:1.5em;
+}
+
+/*
+* Detail Calendar
+************************************/
+.detail-calendar {
+	list-style:none;
+	margin:0 0 1.5em 0;
+	width:100%;
+}
+
+	.detail-calendar li {
+		display:block;
+		float:left;
+		min-height:100px;
+		width:13.4%;
+		border:1px solid #ccc;
+		margin:0 .6% .6% 0;
+		background:#fff;
+	}
+	
+	.detail-calendar li.last {
+		margin-right:0;
+	}
+	
+	.detail-calendar li.out {
+		border:1px solid #f1f1f1;
+	}
+	
+	.detail-calendar li span {
+		display:block;
+		float:left;
+		padding:.15em .25em 0;
+		background:#666;
+		color:#f1f1f1;
+		border-right:1px solid #ccc;
+		border-bottom:1px solid #ccc;
+	}
+	
+	.detail-calendar li a {
+		display:block;
+		clear:left;
+		padding:0 1em;
+		font-size:.9em;
+	}
+	
+	.detail-calendar.editing {
+		margin-bottom:0;
+	}
+	
+	.detail-calendar.editing li {
+		width:13.57	%;
+		min-height:125px;
+	}
+
+/*
+* Detail Contact Information
+************************************/
+.contact-info th {
+	background:#fff;
+	width:80px;
+	font-size:.9em;
+	vertical-align:top;
+	font-weight:normal;
+	font-style:italic;
+	text-align:right;
+}
+
+/*
+* Planning selector
+************************************/
+#planning-selector {
+	list-style:none;
+	margin:0;
+	clear:both;
+	width:100%;
+}
+
+	#planning-selector li {
+		float:left;
+		margin-right:2px;
+	}
+	
+		#planning-selector li a {
+			display:block;
+			padding:0 .75em 0;
+			border-top:1px solid #ccc;
+			border-left:1px solid #ccc;
+			border-right:1px solid #ccc;
+			text-decoration:none;
+			width:100px;
+			text-align:center;
+			background:#fff;
+		}
+		
+		#planning-selector li a.active {
+			background:green;
+			color:#f1f1f1;
+		}
+
+	#planning-selector ul {
+		display:none;
+	}
+
+/*
+* Selection Panel
+************************************/
+.selection-panel {
+	list-style:none;
+	width:98%;
+	height:256px;
+	overflow:auto;
+	margin:0;
+	padding:1.5em 1.5em 0 1.5em;
+	padding-right:0;
+	border:1px solid #ccc;
+	background:#fff;
+}
+
+	.selection-panel li {
+		display:block;
+		float:left;
+		width:189px;
+		height:90px;
+		overflow:hidden;
+		padding:.75em .75em .75em 0;
+		margin:0 1.5em 1.5em 0;
+		border:1px solid #ccc;
+	}
+	
+	.selection-panel li p {
+		height:90px;
+		overflow:hidden;
+	}
+	
+	.selection-panel li span {
+		display:block;
+		float:left;
+		width:60px;
+		height:54px;
+		border:#ccc;
+		margin:0 .75em 0 .75em;
+		background:#f1f1f1;
+	}
+
+/*
+* Selected Panel
+************************************/
+.selected-panel {
+	list-style:none;
+	width:100%;
+	height:256px;
+	overflow:auto;
+	margin:0 0 1.5em 0;
+	padding:1.5em 1.5em 0 1.5em;
+	padding-right:0;
+	border:1px solid #ccc;
+}
+
+	.selected-panel li {
+		display:block;
+		float:left;
+		width:92%;
+		padding:.75em .75em .75em 0;
+		margin:0 0 .5em 0;
+		border:1px solid #ccc;
+	}
+	
+	.selected-panel li span.image {
+		display:block;
+		float:left;
+		width:60px;
+		height:54px;
+		border:#ccc;
+		margin:0 .75em 0 .75em;
+		background:#f1f1f1;
+	}
+	
+	.selected-panel li span.sets-reps {
+		display:block;
+		float:right;
+		margin-left:1.5em;
+		
+	}
+
+	.selected-panel li span.sets-reps label {
+		width:50px;
+		clear:both;
+		margin:0;
+	}
+
+	.selected-panel li span.sets-reps p {
+		float:left;
+		margin-bottom:0;
+	}
+
+/*
+* Workout List
+************************************/
+.workout-container {
+	clear:both;
+	margin-bottom:1.5em;
+	border-bottom:1px solid #eee;
+}
+
+	.workout-container .workout-details {
+		float:left;
+		width:48%;
+		margin:0 0 1.5em 0;
+	}
+	
+	.workout-container .workout-exercises {
+		float:left;
+		width:50%;
+		list-style:none;
+		margin:0 0 .75em 0;
+	}
+	
+	.workout-container .workout-exercises li {
+		margin:0 0 .75em .75em;
+		clear:both;
+		display:inline-block;
+		width:36px;
+	}
+	
+	.workout-container .workout-exercises li a {
+		display:block;
+		float:left;
+		width:34px;
+		height:34px;
+		border:1px solid #ccc;
+		background:#f1f1f1;
+		margin:0 1.5em 0 0;
+		overflow:hidden;
+		line-height:36px;
+	}
+
+/*
+* Workout Edit / Food Edit
+************************************/
+.workout-exercises {
+	list-style:none;
+	margin:0 0 1.5em 0;
+}
+.workout-exercises li {
+	clear:both;
+}
+
+.workout-exercises li span {
+	display:block;
+	float:left;
+	width:2.9em;
+	height:2.9em;
+	border:.1em solid #ccc;
+	margin:0 1em 1em 0;
+	background:#f1f1f1;
+}
+
+#type-container {
+	list-style:none;
+	margin:0;
+}
+
+	#type-container li {
+		float:left;
+	}
+	
+	#type-container li a {
+		background:#fff;
+		padding:.75em 1em;
+		margin:0 .75em .75em 0;
+		border:1px solid #ccc;
+		text-decoration:none;
+	}
+	
+	#type-container li a.active {
+		background:green;
+		color:#f1f1f1;
+	}
+
+#edit-workout .instructions {
+	float:left;
+	width:55%;
+	margin-bottom:1.5em;
+}
+	
+#edit-workout .available-exercises {
+	clear:both;
+	margin:0 1.5em 0 0;
+}
+
+	#edit-workout .available-exercises .selection-panel {
+		width:100%;
+		background:#fff;
+		margin-bottom:0;
+	}
+	
+	#edit-workout .instructions h3 {
+		clear:both;
+		padding-top:1.5em;
+	}
+
+	#edit-workout .instructions textarea {
+		margin-top:0;
+		height:110px;
+		width:94%;
+	}
+
+#edit-workout .ordered-exercises {
+	float:left;
+	width:44%;
+}
+
+	.ordered-exercises .selected-panel {
+		list-style:none;
+		width:99%;
+		height:256px;
+		overflow:auto;
+		margin:0;
+		padding:1.5em 1.5em 0 1.5em;
+		padding-right:0;
+		border:1px solid #ccc;
+		background:#fff;
+	}
+
+/*
+* Food List
+************************************/
+.food-container {
+	clear:both;
+	width:100%;
+	margin-bottom:1.5em;
+	border-bottom:1px solid #eee;
+}
+
+	.food-container .food-details {
+		float:left;
+		width:39%;
+		margin:0 0 1.5em 0;
+	}
+	
+	.food-container .calories,
+	.food-container .carbs-fiber,
+	.food-container .protein-fat {
+		float:left;
+		text-align:right;
+		width:20%;
+		margin:0 0 1.5em 0;
+	}
+
+/*
+* Account
+************************************/
+th.current, td.current {
+	background:green;
+	color:#f1f1f1;
+}
+
+/*
+* Trainer Client List
+************************************/
+#trainer-client-list {
+	list-style:none;
+	margin:0 0 1.5em 0;
+	padding:.75em;
+}
+
+	#trainer-client-list li {
+		border:1px solid #ccc;
+		padding:.75em;
+		margin-bottom:.75em;
+	}
+
+	#trainer-client-list li .image {
+		display:block;
+		float:left;
+		width:60px;
+		height:54px;
+		border:1px solid #ccc;
+		margin-right:.75em;
+		background:#f1f1f1;
+	}

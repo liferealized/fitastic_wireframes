@@ -1,0 +1,89 @@
+<div id="main-column" class="column span-16 colborder">
+  <h2>Update <%= @clientName %>'s Information</h2>
+  <form class="form" action="/clients/save" method="post">
+    <fieldset>
+      <legend>Name</legend>
+      <label for="first_name">First Name</label><input class="text end" type="text" name="first_name" id="first_name" />
+      <label for="last_name">Last Name</label><input class="text end" type="text" name="last_name" id="last_name" />
+    </fieldset>
+    <fieldset>
+      <legend>Address</legend>
+      <label for="street_1">Street</label><input class="text end" type="text" name="street_1" id="street_1" />
+      <label></label><input class="text  end" type="text" name="street_2" id="street_2" />
+      <label for="city">City, State, Zip</label><input class="text city" type="text" name="city" id="city" />
+      <input class="text state" type="text" name="state" id="state" />
+      <input class="text zip_code end" type="text" name="zip_code" id="zip_code" />
+    </fieldset>
+    <fieldset class="phone">
+      <legend>Phone Numbers</legend>
+      <input class="text end" type="text" name="phone[0]" id="phone_0" />
+      <label class="descriptor">
+        <select class="select">
+          <option>Work</option>
+          <option>Mobile</option>
+          <option>Fax</option>
+          <option>Pager</option>
+          <option>Skype</option>
+          <option>Home</option>
+          <option>Other</option>
+        </select>
+        &nbsp;&nbsp;<a href="#">delete</a>
+      </label>
+      <input class="text" type="text" name="phone[1]" id="phone_1" />
+      <label class="descriptor">
+        <select class="select">
+          <option>Work</option>
+          <option>Mobile</option>
+          <option>Fax</option>
+          <option>Pager</option>
+          <option>Skype</option>
+          <option>Home</option>
+          <option>Other</option>
+        </select>
+        &nbsp;&nbsp;<a href="#">delete</a>
+      </label>
+      <input class="text" type="text" name="phone[2]" id="phone_2" />
+      <label class="descriptor">
+        <select class="select">
+          <option>Work</option>
+          <option>Mobile</option>
+          <option>Fax</option>
+          <option>Pager</option>
+          <option>Skype</option>
+          <option>Home</option>
+          <option>Other</option>
+        </select>
+        &nbsp;&nbsp;<a href="#">delete</a>
+      </label>
+      <p class="add-another">
+        <a href="#">Add another phone number</a>
+      </p>
+    </fieldset>
+    <fieldset class="email">
+      <legend>Email Addresses</legend>
+      <input class="text" type="text" name="email_address[0]" id="email_address_0" />
+      <label class="descriptor">
+        <select class="select">
+          <option>Work</option>
+          <option>Personal</option>
+          <option>Other</option>
+        </select>
+        &nbsp;&nbsp;<a href="#">delete</a>
+      </label>
+      <p class="add-another">
+        <a href="#">Add another email address</a>
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Goals</legend>
+      <textarea class="textarea" name="goals" id="goals"></textarea>
+    </fieldset>
+    <button type="button">
+      Update
+    </button>
+  </form>
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+
+</div>

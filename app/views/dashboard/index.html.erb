@@ -1,0 +1,274 @@
+<div id="main-column" class="column block span-16 colborder">
+  <p class="right">
+    <%= link_to 'Today', { :controller => 'dashboard', :action => 'index', :view => 'today' } %>
+    <%= link_to 'Week', { :controller => 'dashboard', :action => 'index', :view => 'week' } %>
+    <%= link_to 'Month', { :controller => 'dashboard', :action => 'index', :view => 'month' } %>
+    <%= link_to 'Print', { :controller => 'dashboard', :action => 'index' } %>
+  </p>
+  <h2><%= scheduleViewTitle(params[:view]) %></h2>
+  <% if params[:view] == nil || params[:view] == 'today'  %>
+  <ul>
+    <li><%= link_to 'Lower Body Workout', { :controller => 'clients', :action => 'workout', :id => 'james-gibson', :subId => 'lower-body-workout' } %> 
+      with 
+      <%= link_to 'James Gibson', { :controller => 'clients', :action => 'show', :id => 'james-gibson' } %>
+       at 7:30am
+    </li>
+    <li>
+      <%= link_to 'Swimming Workout', { :controller => 'clients', :action => 'workout', :id => 'penny-sue', :subId => 'swimming-workout' } %>
+      and 
+      <%= link_to 'Light Circuit Training', { :controller => 'clients', :action => 'workout', :id => 'penny-sue', :subId => 'light-curcuit-training' } %>
+      with 
+      <%= link_to 'Penny Sue', { :controller => 'clients', :action => 'show', :id => 'penny-sue' } %>
+      at 9:00am and 9:30am
+    </li>
+    <li>
+      <%= link_to 'Full Body Workout', { :controller => 'clients', :action => 'workout', :id => 'gina-gibson', :subId => 'full-body-workout' } %>
+      with 
+      <%= link_to 'Gina Gibson', { :controller => 'clients', :action => 'show', :id => 'gina-gibson' } %>      
+      at 12:15pm
+    </li>
+    <li>
+      <%= link_to 'Circuit Training Workout', { :controller => 'clients', :action => 'workout', :id => 'gina-gibson', :subId => 'circuit-training-workout' } %>
+      with
+      <%= link_to 'George Rivera', { :controller => 'clients', :action => 'show', :id => 'george-rivera' } %>
+      at 2:30pm
+    </li>
+  </ul>
+  <% elsif params[:view] == 'week' %>
+  <ul class="detail-calendar clearfix">
+    <li>
+      <span>Su 19<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Mo 20<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Tu 21<sup>st</sup></span>
+
+    </li>
+    <li>
+      <span>We 22<sup>nd</sup></span>
+
+    </li>
+    <li>
+      <span>Th 23<sup>rd</sup></span>
+
+    </li>
+    <li>
+      <span>Fr 24<sup>th</sup></span>
+
+    </li>
+    <li class="last">
+      <span>Sa 25<sup>th</sup></span>
+
+    </li>
+  </ul>
+  <% elsif params[:view] == 'month' %>
+  <ul class="detail-calendar clearfix">
+    <li class="out">
+
+    </li>
+    <li>
+      <span>Mo 1<sup>st</sup></span>
+
+    </li>
+    <li>
+      <span>Tu 2<sup>nd</sup></span>
+
+    </li>
+    <li>
+      <span>We 3<sup>rd</sup></span>
+
+    </li>
+    <li>
+      <span>Th 4<sup>th</sup></span>
+ 
+ 
+    </li>
+    <li>
+      <span>Fr 5<sup>th</sup></span>
+
+    </li>
+    <li class="last">
+      <span>Sa 6<sup>th</sup></span>
+
+    </li>
+    <li >
+      <span>Su 7<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Mo 8<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Tu 9<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>We 10<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Th 11<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Fr 12<sup>th</sup></span>
+
+    </li>
+    <li class="last">
+      <span>Sa 13<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Su 14<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Mo 15<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Tu 16<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>We 17<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Th 18<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Fr 19<sup>th</sup></span>
+
+    </li>
+    <li class="last">
+      <span>Sa 20<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Su 21<sup>st</sup></span>
+
+    </li>
+    <li>
+      <span>Mo 22<sup>nd</sup></span>
+
+    </li>
+    <li>
+      <span>Tu 23<sup>rd</sup></span>
+
+    </li>
+    <li>
+      <span>We 24<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Th 25<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Fr 26<sup>th</sup></span>
+
+    </li>
+    <li class="last">
+      <span>Sa 27<sup>th</sup></span>
+
+    </li>
+    <li class="end">
+      <span>Su 28<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Mo 29<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>Tu 30<sup>th</sup></span>
+
+    </li>
+    <li>
+      <span>We 31<sup>st</sup></span>
+
+    </li>
+    <li class="out">
+
+    </li>
+    <li class="out">
+
+    </li>
+    <li class="out last">
+
+    </li>
+  </ul>
+  <% end %>
+  <% if params[:view] == nil || params[:view] == 'today' || params[:view] == 'week' %>
+  <p class="right">
+    <%= link_to 'Week', { :controller => 'dashboard', :action => 'activity', :id => 'week' } %>
+    <%= link_to 'Month', { :controller => 'dashboard', :action => 'activity', :id => 'month' } %>
+    <%= link_to 'View All', { :controller => 'dashboard', :action => 'activity', :id => 'all' } %>
+  </p>
+  <h2>Latest Client Activity</h2>
+  <h3>Today</h3>
+  <ul>
+    <li>
+      <%= link_to 'Jimmy', { :controller => 'clients', :action => 'show', :id => 'jimmy-james' } %> 
+      completed his 
+      <%= link_to 'lower body workout', { :controller => 'clients', :action => 'workout', :id => 'jimmy-james', :subId => 'lower-body-workout', :record => '2008-07-15' } %> 
+      at 2:30pm.
+    </li>
+    <li>
+      <%= link_to 'James', { :controller => 'clients', :action => 'show', :id => 'james-gibson' } %> 
+      <span class="updated">updated</span> his 
+      <%= link_to 'measurements and weight', { :controller => 'clients', :action => 'progress', :id => 'james-gibson', :subId => '2008-07-15' } %> 
+      at 12:16pm. He's 
+      <%= link_to 'lost 10 pounds', { :controller => 'clients', :action => 'progress', :id => 'james-gibson' } %> 
+      since creating his account!
+    </li>
+  </ul> 
+  <p>
+    <%= link_to 'RSS feed for the latest activity', { :controller => 'rss', :action => 'all_activity' }%>
+  </p>
+  <% end  %>
+</div>
+
+<div id="secondary-column" class="column block span-7 last">
+  <p>Find a Client <br /> 
+  <input class="text side" type="text" name="search-box" id="search-box" /></p>
+  <button class="in-line-with-text" type="button">
+    Add a Client
+  </button>
+
+  <% if params[:view] == 'month' %>
+  <p class="right">
+    <%= link_to 'Week', { :controller => 'dashboard', :action => 'activity', :id => 'week' } %>
+    <%= link_to 'Month', { :controller => 'dashboard', :action => 'activity', :id => 'month' } %>
+    <%= link_to 'View All', { :controller => 'dashboard', :action => 'activity', :id => 'all' } %>
+  </p>
+  <h2>Latest Client Activity</h2>
+  <h3>Today</h3>
+  <ul>
+    <li>
+      <%= link_to 'Jimmy', { :controller => 'clients', :action => 'show', :id => 'jimmy-james' } %> 
+      completed his 
+      <%= link_to 'lower body workout', { :controller => 'clients', :action => 'workout', :id => 'jimmy-james', :subId => 'lower-body-workout', :record => '2008-07-15' } %> 
+      at 2:30pm.
+    </li>
+    <li>
+      <%= link_to 'James', { :controller => 'clients', :action => 'show', :id => 'james-gibson' } %> 
+      <span class="updated">updated</span> his 
+      <%= link_to 'measurements and weight', { :controller => 'clients', :action => 'progress', :id => 'james-gibson', :subId => '2008-07-15' } %> 
+      at 12:16pm. He's 
+      <%= link_to 'lost 10 pounds', { :controller => 'clients', :action => 'progress', :id => 'james-gibson' } %> 
+      since creating his account!
+    </li>
+  </ul> 
+  <p>
+    <%= link_to 'RSS feed for the latest activity', { :controller => 'rss', :action => 'all_activity' }%>
+  </p>
+  <% end  %>
+</div>

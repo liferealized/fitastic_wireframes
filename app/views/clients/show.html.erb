@@ -1,0 +1,188 @@
+<div id="main-column" class="column span-16 colborder">
+  <div id="client-header">
+    <%= link_to "Edit #{@id}'s Information", { :controller => 'clients', :action => 'edit', :id => @id }, :class => "right" %>
+    <%= link_to '', { }, :class => "client-picture" %>
+    <h2 class="nil-bottom-margin"><%= @id %></h2>
+    <p>has been a client since 15 November, 2007.</p>
+  </div>
+  <% if params[:goals] == nil %>
+  <%= link_to "Edit #{@id}'s Goals", { :controller => 'clients', :action => 'show', :id => @id, :goals => 'edit' }, :class => "right" %>
+  <h3>Goals</h3>
+  <p><%= @id %>'s goals are to lose 15 pounds and gain 10 pounds of muscle. He would like to accomplish this goal
+    within three months.
+  </p>
+  <% elsif params[:goals] == 'edit' %>
+  <form action="/clients/<%= @id %>" class="form" method="post">
+    <fieldset>
+      <legend>Goals</legend>
+      <textarea class="textarea" name="goals" id="goals"><%= @id %>'s goals are to lose 15 pounds and gain 10 pounds of muscle. He would like to accomplish this goal within three months.</textarea>
+      <button type="button">
+        Update
+      </button>
+      <%= link_to 'Cancel', { :controller => 'clients', :action => 'show', :id => @id } %>
+    </fieldset>
+  <form>  
+  <% end %>
+  <div id="eating-plan">
+    <%= link_to "Edit #{@id}'s Eating Plan", { :controller => 'clients', :action => 'eating', :id => @id }, :class => "right" %>
+    <a class="right" href="/clients/<%= @clientName %>/eating"></a>
+    <h3><%= @id %>'s Eating Plan</h3>
+    <ul class="detail-calendar clearfix">
+      <li>
+        <span>Su</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+      <li>
+        <span>Mo</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+      <li>
+        <span>Tu</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+      <li>
+        <span>We</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+      <li>
+        <span>Th</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+      <li>
+        <span>Fr</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+      <li class="last">
+        <span>Sa</span>
+        <a href="#">breakfast</a>
+        <a href="#">lunch</a>
+        <a href="#">snack</a>
+        <a href="#">dinner</a>
+      </li>
+    </ul>
+  </div>
+  <div id="workout-plan">
+    <a class="right" href="/clients/<%= @id %>/workout">Edit <%= @id %>'s Workout Plan</a>
+    <h3><%= @id %>'s Two Week Workout Plan</h3>
+    <p><%= @id %> started this workout on August 16<sup>th</sup> and has been completing it for the last 5 weeks.</p>
+    <ul class="detail-calendar clearfix">
+      <li>
+        <span>Su</span>
+      </li>
+      <li>
+        <span>Mo</span>
+        <a href="#">Upper Body</a>
+      </li>
+      <li>
+        <span>Tu</span>
+        <a href="#">Cardio - Swimming</a>
+      </li>
+      <li>
+        <span>We</span>
+        <a href="#">Lower Body</a>
+      </li>
+      <li>
+        <span>Th</span>
+        <a href="#">Cardio - Swimming</a>
+      </li>
+      <li>
+        <span>Fr</span>
+        <a href="#">Upper Body</a>
+      </li>
+      <li class="last">
+        <span>Sa</span>
+        <a href="#">Cardio - Swimming</a>
+      </li>
+      <li class="end">
+        <span>Su</span>
+      </li>
+      <li>
+        <span>Mo</span>
+        <a href="#">Lower Body</a>
+      </li>
+      <li>
+        <span>Tu</span>
+        <a href="#">Cardio - Swimming</a>
+      </li>
+      <li>
+        <span>We</span>
+        <a href="#">Upper Body</a>
+      </li>
+      <li>
+        <span>Th</span>
+        <a href="#">Cardio - Swimming</a>
+      </li>
+      <li>
+        <span>Fr</span>
+        <a href="#">Lower Body</a>
+      </li>
+      <li class="last">
+        <span>Sa</span>
+        <a href="#">Cardio - Swimming</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <a class="right" href="/clients/<%= @id %>/edit">Edit  Contact Info</a>
+  <h3>Contact <%= @id %></h3>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Email Address</th>
+        <td><a href="#">[email address]</a></td>
+      </tr>
+    <tbody>
+  </table>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Cell Phone</th>
+        <td><a href="#">[999-999-9999]</a></td>
+      </tr>
+      <tr>
+        <th>Home Phone</th>
+        <td><a href="#">[999-999-9999]</a></td>
+      </tr>
+      <tr>
+        <th>Work Phone</th>
+        <td><a href="#">[999-999-9999]</a></td>
+      </tr>
+    <tbody>
+  </table>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Address</th>
+        <td>[street address] <br /> [city], [state] [zip code]</td>
+      </tr>
+    <tbody>
+  </table>
+  <a class="right" href="/clients/<%= @id %>/activity">View All</a>
+  <h3><%= @id %>'s Lastest Activity</h3>
+  <h4>Today</h4>
+  <ul>
+    <li><span class="updated">Updated</span> his 
+      <a href="/clients/jimmy-james/progress/2008-06-27">measurements and weight</a> at 12:16pm. 
+      He's <a href="/clients/james-gibson/progress">lost 10 pounds</a> since creating his account!</a></li>
+  </ul>
+</div>

@@ -1,0 +1,52 @@
+<div id="main-column" class="column span-16 colborder">
+  <h2>Trainers / Users</h2>
+
+  <div id="list">
+    <div id="client-id-123455" class="list-container clearfix">
+      <div class="list-picture">
+        <a href="/trainers/billy-bob">
+          
+        </a>
+      </div>
+      <div class="list-details">
+        <h3 class="list-name"><a href="/trainers/billy-bob" title="View Billy's Detailed Information">Billy Bob</a></h3>
+        <a href="mailto:billy.bob@gmail.com" title="Email Billy">billy.bob@gmail.com</a>
+      </div>
+      <div class="list-address">
+        <p>1234 Anywhere Street <br />Orlando, FL 32789</p>
+      </div>
+      <div class="list-contact-info">
+        <p>
+          c. 407-313-2983
+      </div>
+      <div class="list-actions">
+        <p>
+          <a href="/clients/billy-bob/clients" title="View Billy's Clients">Clients</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <button class="in-line-with-text" type="button" onclick="document.getElementById('add-client-form').style.display = 'block';">
+    Add a Trainer
+  </button>
+  <form id="add-client-form" style="display:none;">
+    <label>First Name</label>
+    <input class="text side" type="text" name="first-name" id="first-name" />
+    <label>Last Name</label>
+    <input class="text side" type="text" name="last-name" id="last-name" />
+    <label>Email Address</label>
+    <input class="text side" type="text" name="email-address" id="email-address" />  
+    <button class="in-line-with-text" type="button" href="#" onclick="">
+      Create Client
+    </button>  
+  </form>
+    <p>Find a Trainer by Name <input class="text" type="text" /></p>
+    <p>Show: 
+      <select id="" name="">
+        <option value="">All Trainers</option>
+      </select>
+    </p>
+</div>

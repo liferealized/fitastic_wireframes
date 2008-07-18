@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Fitties</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/blueprint/blue-print-min.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/blueprint/src/liquid.css" media="screen" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="logo">Fitties</h1>
+        <ul id="main-nav">
+          <li>
+              <%= navigation_link "Dashboard", {:controller => 'dashboard', :action => 'index'} %>
+  			  </li>
+          <li>
+              <%= navigation_link "Clients", {:controller => 'clients', :action => 'index'} %>
+          </li>
+          <!--
+          <li>
+              <%= navigation_link "Messages", {:controller => 'messages', :action => 'index'} %>
+          </li>
+          -->
+          <li>
+              <%= navigation_link "Workouts", {:controller => 'workouts', :action => 'index'} %>
+          </li>
+          <li>
+              <%= navigation_link "Nutrition", {:controller => 'recipes', :action => 'index'} %>
+          </li
+        </ul>
+        <ul id="secondary-nav">
+          <li>
+              <%= navigation_link "Account", {:controller => 'account', :action => 'index'}, true %>
+          </li>
+          <li>
+              <%= navigation_link "Trainers", {:controller => 'trainers', :action => 'index'} %>
+          </li>
+          <li>
+              <%= navigation_link "Settings", {:controller => 'account', :action => 'settings'}, true %>
+          </li>
+          <li>
+              <%= navigation_link "Log Out", {:controller => 'logout', :action => 'index'} %>
+          </li>
+        </ul>
+        <hr />
+        <%= yield  %>
+        <hr />
+        <p>All text and design is copyright &copy; 2008 Fitties, LLC. All rights reserved.
+      </div>
+      
+    </div>
+  </body>
+</html>

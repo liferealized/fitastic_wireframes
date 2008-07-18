@@ -1,0 +1,70 @@
+<div id="main-column" class="column span-16 colborder">
+  <h2>Clients</h2>
+
+  <div id="list">
+    <div id="client-id-123455" class="list-container clearfix">
+      <div class="list-picture">
+        <%= link_to '', { :controller => 'clients', :action => 'show', :id => 'billy-bob' } %>
+      </div>
+      <div class="list-details">
+        <h3 class="list-name">
+          <%= link_to 'Billy Bob', { :controller => 'clients', :action => 'show', :id => 'billy-bob' }, :title => "View Billy's detailed information" %>
+        </h3>
+        <%= mail_to 'billy.bob@gmail.com', nil, :title => 'Send Billy an email' %>
+      </div>
+      <div class="list-address">
+        <p>1234 Anywhere Street <br />Orlando, FL 32789</p>
+      </div>
+      <div class="list-contact-info">
+        <p>
+          c. 407-313-2983
+        </p>
+      </div>
+      <div class="list-actions">
+        <p>
+          <%= link_to 'Workout Plan', { :controller => 'clients', :action => 'workout', :id => 'billy-bob' } %>
+          <br />
+          <%= link_to 'Eating Plan', { :controller => 'clients', :action => 'eating', :id => 'billy-bob' }, :title => "Update Billy's eating plan" %>
+        </p>
+      </div>
+    </div>
+    <div id="client-id-123455" class="list-container clearfix">
+      <div class="list-picture">
+        <%= link_to '', { :controller => 'clients', :action => 'show', :id => 'james-gibson' } %>
+      </div>
+      <div class="list-details">
+        <h3 class="list-name">
+          <%= link_to 'James Gibson', { :controller => 'clients', :action => 'show', :id => 'james-gibson' }, :title => "View James' detailed information" %>
+        </h3>
+        <%= mail_to 'james.t.gibson@gmail.com', nil, :title => 'Send James an email' %>
+      </div>
+      <div class="list-address">
+        <p>2873 Marsala Court <br />Orlando, FL 32806</p>
+      </div>
+      <div class="list-contact-info">
+        <p>
+          c. 407-259-1636
+          <br />w. 407-566-2928
+      </div>
+      <div class="list-actions">
+        <p>
+          <%= link_to 'Workout Plan', { :controller => 'clients', :action => 'workout', :id => 'james-gibson' } %>
+          <br />
+          <%= link_to 'Eating Plan', { :controller => 'clients', :action => 'eating', :id => 'james-gibson' }, :title => "Update James' eating plan" %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <button class="in-line-with-text" type="button">
+    Add a Client
+  </button>
+    <p>Find a Client by Name <input class="side text" type="text" /></p>
+    <p>Show: 
+      <select id="" name="">
+        <option value="">All Clients</option>
+      </select>
+    </p>
+</div>

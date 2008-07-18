@@ -1,0 +1,74 @@
+<div id="main-column" class="column span-16 colborder">
+  <div id="client-header">
+    <%= link_to "Edit this Recipe", { :controller => 'recipes', :action => 'edit', :id => @id }, :class => "right" %>
+    <h2 class="nil-bottom-margin"><%= @id %></h2>
+    <p>Breakfast - This recipe is shared.</p>
+  </div>
+  <%= link_to "Change the ingredients", { :controller => 'recipes', :action => 'edit', :id => @id }, :class => "right" %>
+  <h3>Ingredients</h3>
+  <ul>
+    <li>2/3 cup of something</li>
+    <li>1 pound of 93% lean ground beef</li>
+    <li>1 pound of idaho potatoes</li>
+    <li>1 large onion chopped</li>
+    <li>1 bottle of hot sauce</li>
+    <li>Lots of vegetables</li>
+  </ul>
+  <%= link_to "Edit the instructions", { :controller => 'recipes', :action => 'edit', :id => @id }, :class => "right" %>
+  <h3>Instructions</h3>
+  <p>
+    Brown the meat. Once browned, lay on the bottom of the stove and chop up the vegetables and place them above. 
+    Slice the potatoes up and lay them over the top and cook at 350 degrees for 40 minutes. Once done, eat out
+    of the oven.
+  </p>
+
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <a class="right" href="/clients/<%= @id %>/edit">Edit Nutritional Facts</a>
+  <h3>Nutritional Facts</h3>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Servings</th>
+        <td><a href="#">[# of servings]</a></td>
+      </tr>
+      <tr>
+        <th>Calories</th>
+        <td><a href="#">[### of calories]</a></td>
+      </tr>
+      <tr>
+        <th>Fiber</th>
+        <td><a href="#">[### grams of fiber]</a></td>
+      </tr>
+      <tr>
+        <th>Carbs</th>
+        <td><a href="#">[### grams of carbs]</a></td>
+      </tr>
+      <tr>
+        <th>Protein</th>
+        <td><a href="#">[### grams of protein]</a></td>
+      </tr>
+      <tr>
+        <th>Fat</th>
+        <td><a href="#">[### grams of fat]</a></td>
+      </tr>
+    <tbody>
+  </table>
+  <%= link_to 'View All', { :controller => 'recipes', :action => 'clients', :id => @id }, :class => 'right' %>
+  <h3>Clients using this recipe</h3>
+  <ul>
+    <li><%= link_to 'James Gibson', { :controller => 'clients', :action => 'show', :id => 'james-gibson' } %></li>
+    <li><%= link_to 'Gina Gibson', { :controller => 'clients', :action => 'show', :id => 'gina-gibson' } %></li>
+    <li><%= link_to 'Billy Bob', { :controller => 'clients', :action => 'show', :id => 'billy-bob' } %></li>
+    <li><%= link_to 'Yo Mama', { :controller => 'clients', :action => 'show', :id => 'yo-mama' } %></li>
+    <li><%= link_to '22 more...', { :controller => 'recipes', :action => 'clients', :id => @id } %></li>
+  </ul>
+  <%= link_to 'View All', { :controller => 'recipes', :action => 'comments', :id => @id }, :class => 'right' %>
+  <h3>Comments on the recipe</h3>
+  <ul>
+    <li>This recipe is awesome, I loved eating it out of the oven.</li>
+    <li>This hit the spot for me and my clients, thanks for sharing.</li>
+    <li>Burned myself eating it out of the oven. Other than that, we will definitely use this recipe for our clients. </li>
+  </ul>
+</div>

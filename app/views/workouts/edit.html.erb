@@ -1,0 +1,111 @@
+<h2>Editing <%= @workoutId %></h2>
+<form class="form" action="#" method="post">
+  <fieldset>
+    <legend>Workout Type</legend>
+    <button class="right">
+      Add a Type
+    </button>
+    <ul id="type-container">
+      <li><a class="active" href="#" title="Cardio">Cardio</a></li>
+      <li><a href="#" title="Weight Lifting">Weight Lifting</a></li>
+      <li><a class="active" href="#" title="Circuit">Circuit</a></li>
+      <li><a href="#" title="Around the House">Around the House</a></li>
+    </ul>
+  </fieldset>
+  <fieldset id="edit-workout">
+    <legend>Workout</legend>
+    <div class="instructions">
+      <label for="title" class="title">Title</label><input type="text" class="text title" name="title" id="title" />
+      <label for="minutes">Length</label><input type="text" class="text minutes" name="minutes" id="minutes" />
+      <label for="intensity">Intensity</label>
+      <select class="select">
+        <option>Able to talk</option>
+        <option>Breathing a little heavy</option>
+        <option>All Out!</option>
+      </select>
+      <h3>Instructions</h3>
+      <p>Area for notes on what to include in the instructions. This content is not final.</p>  
+      <textarea class="textarea" name="instructions" id="instructions"></textarea>   
+    </div>
+    <div class="ordered-exercises">
+      <h3>Selected Exercises</h3>
+      <p>These are some more instructions</p>
+      <ul class="selected-panel">
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Bench Press</p>
+        </li>
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Pull Ups</p>
+        </li>
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Should Press</p>
+        </li>
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Clean &amp; Jerk</p>
+        </li>
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Squats</p>
+        </li>
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Leg Extension</p>
+        </li>
+        <li>
+          <span class="image"></span>
+          <span class="sets-reps">
+            <label for="sets">Sets</label><p>3</p>
+            <label for="reps">Reps</label><p>12</p>
+          </span>
+          <p>Sit-ups</p>
+        </li>
+      </ul>
+    </div>
+    <div class="available-exercises">
+      <h3>Available Exercises</h3>
+      <ul id="planning-selector" class="clearfix">
+        <li><a href="#" class="active">Cardio</a></li>
+        <li><a href="#">Weight Lifting</a></li>
+        <li><a href="#">Circuit</a></li>
+        <li><a href="#">Around the House</a></li>
+      </ul>
+      <ul class="selection-panel">
+        <li><span></span><p>Incline Bench Press</p></li>
+        <li><span></span><p>Incline Bench Press</p></li>
+        <li><span></span><p>Incline Bench Press</p></li>
+        <li><span></span><p>Incline Bench Press</p></li>
+        <li><span></span><p>Incline Bench Press</p></li>
+        <li><span></span><p>Incline Bench Press</p></li>
+      </ul>
+    </div>
+  </fieldset>
+  
+</form>

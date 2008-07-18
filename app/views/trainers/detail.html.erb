@@ -1,0 +1,57 @@
+<div id="main-column" class="column span-16 colborder">
+  <div id="client-header">
+    <a class="right" href="/trainers/<%= @trainerId %>/edit">Edit <%= @trainerId %>'s Information</a>
+    <a class="client-picture">
+      
+    </a>
+    <h2 class="nil-bottom-margin"><%= @trainerId %></h2>
+    <p><%= @clientName %> has been a trainer since 15 November, 2007.</p>
+  </div>
+
+
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <a class="right" href="/trainers/<%= @trainerId %>/edit">Edit  Contact Info</a>
+  <h3>Contact <%= @trainerId %></h3>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Email Address</th>
+        <td><a href="#">[email address]</a></td>
+      </tr>
+    <tbody>
+  </table>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Cell Phone</th>
+        <td><a href="#">[999-999-9999]</a></td>
+      </tr>
+      <tr>
+        <th>Home Phone</th>
+        <td><a href="#">[999-999-9999]</a></td>
+      </tr>
+      <tr>
+        <th>Work Phone</th>
+        <td><a href="#">[999-999-9999]</a></td>
+      </tr>
+    <tbody>
+  </table>
+  <table class="contact-info">
+    <tbody>
+      <tr>
+        <th>Address</th>
+        <td>[street address] <br /> [city], [state] [zip code]</td>
+      </tr>
+    <tbody>
+  </table>
+  <a class="right" href="#">View All</a>
+  <h3><%= @trainerId %>'s Active Clients</h3>
+  <ul id="trainer-client-list">
+    <li><span class="image"></span><h4><a href="/clients/jimmy-james">Jimmy James</a></h4> Member since July 7, 2006</li>
+    <li><span class="image"></span><h4><a href="/clients/jimmy-james">Jimmy James</a></h4> Member since July 7, 2006</li>
+    <li><span class="image"></span><h4><a href="/clients/jimmy-james">Jimmy James</a></h4> Member since July 7, 2006</li>
+    <li><span class="image"></span><h4><a href="/clients/jimmy-james">Jimmy James</a></h4> Member since July 7, 2006</li>
+  </ul>
+</div>

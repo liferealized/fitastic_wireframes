@@ -1,0 +1,41 @@
+<h2>Editing <%= @foodId %></h2>
+<form class="form" action="#" method="post">
+  <fieldset>
+    <legend>Meal Type</legend>
+    <p class="right">
+      Share this recipe
+      <input type="checkbox" />
+    </p>
+    <ul id="type-container" class="clearfix">
+      <li><a class="active" href="#" title="Breakfast">Breakfast</a></li>
+      <li><a href="#" title="Lunch">Lunch</a></li>
+      <li><a href="#" title="Snack">Snack</a></li>
+      <li><a href="#" title="Dinner">Dinner</a></li>
+    </ul>
+  </fieldset>
+  <fieldset id="edit-workout">
+    <legend>Meal</legend>
+    <div class="instructions"> 
+      <label for="title" class="title">Title</label><input type="text" class="text title" name="title" id="title" />
+      <div class="details">
+        <label for="servings">Servings</label><input class="text" type="text" name="servings" id="servings" />
+        <label for="calories">Calories</label><input class="text" type="text" name="calories" id="calories" />
+        <label for="fiber">Fiber</label><input class="text" type="text" name="fiber" id="fiber" />
+      </div>
+      <div class="details">
+        <label for="carbs">Carbs</label><input class="text" type="text" name="carbs" id="carbs" />
+        <label for="protein">Protein</label><input class="text" type="text" name="protein" id="protein" />
+        <label for="fat">Fat</label><input class="text" type="text" name="fat" id="fat" />
+      </div>
+      <h3>Recipe Instructions</h3>
+      <p>Area for notes on what to include in the instructions. This content is not final.</p>
+      <textarea class="textarea" name="instructions" id="instructions"></textarea>   
+    </div>
+    <div class="ordered-exercises">
+      <h3>Ingredients</h3>
+      <p>These are some more instructions</p>
+      <textarea class="textarea ingredients">2/3 cup chopped onions</textarea>
+    </div>
+  </fieldset>
+  
+</form>

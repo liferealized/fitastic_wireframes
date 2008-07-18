@@ -1,0 +1,26 @@
+<div id="main-column" class="column span-16 colborder">
+  <div id="client-header">
+    <p class="right">
+      <%= link_to 'Week', { :controller => 'activity', :action => 'index', :id => 'week' } %>
+      <%= link_to 'Month', { :controller => 'activity', :action => 'index', :id => 'month' } %>
+      <%= link_to 'View All', { :controller => 'activity', :action => 'index', :id => 'all' } %>
+    </p>
+    <h2 class="nil-bottom-margin">This <%= @id %>s Activity</h2>
+  </div>
+  <h3>Today</h3>
+  <ul>
+    <li><%= link_to 'James', { :controller => 'clients', :action => 'show', :id => 'james-gibson' } %>
+      <span class="updated">Updated</span> his 
+      <a href="/clients/jimmy-james/progress/2008-06-27">measurements and weight</a> at 12:16pm. 
+      He's <a href="/clients/james-gibson/progress">lost 10 pounds</a> since creating his account!</a></li>
+  </ul>
+  <h3>Yesterday</h3>
+  <ul>
+    <li><%= link_to 'Billy', { :controller => 'clients', :action => 'show', :id => 'billy-bob' } %> 
+      <span class="ate">ate</span> 2000 calories for the day.</li>
+  </ul>
+</div>
+
+<div id="secondary-column" class="column span-7 last">
+  <h3>TBD... what should go here</h3>
+</div>

@@ -1,0 +1,97 @@
+<p class="right">
+  <select id="week-number" name="week-number">
+    <option value="1">One Week Program</option>
+    <option value="2" selected="selected">Two Week Program</option>
+  </select></p>
+
+<h2>Editing <%= @clientName %>'s workout plan</h2>
+<form class="form" method="post">
+<fieldset>
+  <legend>Schedule</legend>
+  <ul class="detail-calendar editing clearfix">
+    <li class="end">
+      <span>Su</span>
+    </li>
+    <li>
+      <span>Mo</span>
+      <a href="#">Upper Body</a>
+    </li>
+    <li>
+      <span>Tu</span>
+      <a href="#">Cardio - Swimming</a>
+    </li>
+    <li>
+      <span>We</span>
+      <a href="#">Lower Body</a>
+    </li>
+    <li>
+      <span>Th</span>
+      <a href="#">Cardio - Swimming</a>
+    </li>
+    <li>
+      <span>Fr</span>
+      <a href="#">Upper Body</a>
+    </li>
+    <li>
+      <span>Sa</span>
+      <a href="#">Cardio - Swimming</a>
+    </li>
+    <li class="end">
+      <span>Su</span>
+    </li>
+    <li>
+      <span>Mo</span>
+      <a href="#">Lower Body</a>
+    </li>
+    <li>
+      <span>Tu</span>
+      <a href="#">Cardio - Swimming</a>
+    </li>
+    <li>
+      <span>We</span>
+      <a href="#">Upper Body</a>
+    </li>
+    <li>
+      <span>Th</span>
+      <a href="#">Cardio - Swimming</a>
+    </li>
+    <li>
+      <span>Fr</span>
+      <a href="#">Lower Body</a>
+    </li>
+    <li>
+      <span>Sa</span>
+      <a href="#">Cardio - Swimming</a>
+    </li>
+  </ul>
+</fieldset>
+
+<button class="right" type="button" style="margin-left:1em;">
+  Update Workout Plan
+</button>
+
+<button class="right" type="button">
+  Create a new Workout
+</button>
+<fieldset>
+  <legend>Available Exercises</legend>
+  <ul id="planning-selector" class="clearfix">
+    <li><a href="#" class="active">Cardio</a></li>
+    <li><a href="#">Weight Lifting</a></li>
+    <li><a href="#">Circuit</a></li>
+    <li><a href="#">Around the House</a></li>
+  </ul>
+
+  <ul id="breakfast-list" class="selection-panel clearfix">
+    <li><span></span><p>Swimming</p></li>
+    <li><span></span><p>Stationary Bike</li>
+    <li><span></span><p>Running Outside</li>
+    <li><span></span><p>Interval Sprinting</li>
+    <li><span></span><p>Treadmill running</li>
+    <li><span></span><p>Elliptical training</li>
+    <li><span></span><p>Rowing</li>
+    <li><span></span><p>Aerobics Class</li>
+    <li><span></span><p>Spinning Class</li>
+    <li><span></span><p>Walking</li>
+  </ul>
+</fieldset>
