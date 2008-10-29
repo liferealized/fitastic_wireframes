@@ -20,6 +20,6 @@ test:
 production:
     adapter: postgresql
     encoding: unicode
-    database: fitties_prod
+    database: fitties_production
     username: postgres
-    password:
+    password: m0therland2008
